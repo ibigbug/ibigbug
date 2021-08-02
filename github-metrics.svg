@@ -1370,7 +1370,7 @@
                     <rect mask="url(#languages-bar)" x="380.29326777984477" y="0" width="24.86744787326526" height="8" fill="#178600"/>
                     <rect mask="url(#languages-bar)" x="405.16071565311" y="0" width="23.82056646862486" height="8" fill="#438eff"/>
                     <rect mask="url(#languages-bar)" x="428.98128212173486" y="0" width="19.357981955523925" height="8" fill="#b07219"/>
-                    <rect mask="url(#languages-bar)" x="448.3392640772588" y="0" width="11.660735922741175" height="8" fill="#ffac45"/>
+                    <rect mask="url(#languages-bar)" x="448.3392640772588" y="0" width="11.660735922741175" height="8" fill="#F05138"/>
                 </svg>
                 <div class="row fill-width">
                     <section>
@@ -1448,7 +1448,7 @@
                         </div>
                         <div class="field language details">
                             <div class="field">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill="#ffac45" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/></svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill="#F05138" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/></svg>
                       Swift
                     </div>
                             <small>
@@ -1620,7 +1620,7 @@
                                     </defs>
                                     <svg xmlns="http://www.w3.org/2000/svg" class="gauge info">
                                         <circle class="gauge-base" r="25" cx="28" cy="28"/>
-                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="173.32536028722728 155"/>
+                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="173.32876660587903 155"/>
                                     </svg>
                                     <svg xmlns="http://www.w3.org/2000/svg" mask="url(#mask)">
                                         <g xmlns="http://www.w3.org/2000/svg" transform="translate(5 4)" fill="none" fill-rule="evenodd">
@@ -1888,7 +1888,7 @@
             </section>
             <footer>
                 <span>These metrics do not include all private contributions</span>
-                <span>Last updated 02/08/2021, 20:11 (timezone Australia/Sydney) with lowlighter/metrics@3.11.0</span>
+                <span>Last updated 02/08/2021, 21:08 (timezone Australia/Sydney) with lowlighter/metrics@3.11.0</span>
             </footer>
         </div>
         <div xmlns="http://www.w3.org/1999/xhtml" id="metrics-end"></div>
