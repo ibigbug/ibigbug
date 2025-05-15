@@ -1,22 +1,30 @@
-name: Metrics
+name: GitHub-Profile-Summary-Cards
+
 on:
-  # Schedule updates (each hour)
-  schedule: [{cron: "0 * * * *"}]
-  # Lines below let you run workflow manually and on each commit (optional)
+  schedule: # execute every 24 hours
+    - cron: "* */24 * * *"
   workflow_dispatch:
-  push: {branches: ["master", "main"]}
+
 jobs:
-  github-metrics:
+  build:
     runs-on: ubuntu-latest
+    name: generate-github-profile-summary-cards
+    permissions:
+      contents: write
+
     steps:
-      # See action.yml for all options
-      - uses: lowlighter/metrics@latest
+      - uses: actions/checkout@v4
+      - uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          GITHUB_TOKEN: ${{ secrets.METRICS }}
+
         with:
-          # Your GitHub token
-          token: ${{ secrets.METRICS }}
-          template: classic
-          
-          plugin_notable: yes
-          plugin_notable_filter: stars:>500 # Only display repositories with 500 stars or more (syntax based on GitHub search query)
-          
-          config_timezone: Australia/Sydney # Set timezone
+          USERNAME: ${{ github.repository_owner }}
+          # BRANCH_NAME is optional, default to main, branch name to push cards
+          BRANCH_NAME: "main"
+          # UTC_OFFSET is optional, default to zero
+          UTC_OFFSET: 10
+          # EXCLUDE is an optional comma seperated list of languages to exclude, defaults to ""
+          EXCLUDE: ""
+          # AUTO_PUSH is optional, a boolean variable default to true, whether automatically push generated files to desired branch
+          AUTO_PUSH: true
